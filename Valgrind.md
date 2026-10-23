@@ -1,5 +1,5 @@
 # 交叉编译及运行
-## 源码下载后解压后进入源码目录
+## 源码下载解压后进入源码目录
 valgrind-3.17.0.tar.bz2
 ## 配置及编译
 1. apt install automake
@@ -10,6 +10,8 @@ valgrind-3.17.0.tar.bz2
 ```
 4. make
 5. make install
+6. ./configure失败解决方案
+* 打开configure，armv7a* 改成arm*
 ## 运行
 1. 设备需要未strip的ld动态库，一般在交叉编译链下有，把该动态库替换掉设备里strip过的库。
 ```
